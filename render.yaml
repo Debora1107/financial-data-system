@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: financial-data-visualization
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python data_visualization/app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: DB_HOST
+        fromDatabase:
+          name: financial-data-db
+          property: host
+      - key: DB_NAME
+        fromDatabase:
+          name: financial-data-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: financial-data-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: financial-data-db
+          property: password
+      - key: DB_PORT
+        fromDatabase:
+          name: financial-data-db
+          property: port
+    autoDeploy: true
+
+databases:
+  - name: financial-data-db
+    databaseName: financial_data
+    user: postgres
+    plan: free
