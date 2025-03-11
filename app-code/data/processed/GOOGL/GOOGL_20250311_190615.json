@@ -1,0 +1,12 @@
+{
+  "symbol": "GOOGL",
+  "price": 120.03,
+  "volume": 9091,
+  "timestamp": "2025-03-11T19:06:15.028143",
+  "market_cap": 4256857851,
+  "shares_outstanding": 96849765,
+  "change_percent": -0.33,
+  "sentiment": "very_negative",
+  "processing_timestamp": "2025-03-11T19:06:15.034310",
+  "value": 1091192.73
+}

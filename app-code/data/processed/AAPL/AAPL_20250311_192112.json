@@ -1,0 +1,12 @@
+{
+  "symbol": "AAPL",
+  "price": 173.08,
+  "volume": 2014,
+  "timestamp": "2025-03-11T19:21:12.210036",
+  "market_cap": 9868958595,
+  "shares_outstanding": 90123497,
+  "change_percent": 1.7,
+  "sentiment": "very_negative",
+  "processing_timestamp": "2025-03-11T19:21:12.240953",
+  "value": 348583.12000000005
+}

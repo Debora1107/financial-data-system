@@ -1,0 +1,12 @@
+{
+  "symbol": "MSFT",
+  "price": 177.38,
+  "volume": 4652,
+  "timestamp": "2025-03-11T19:06:39.079307",
+  "market_cap": 1482312390,
+  "shares_outstanding": 4261001,
+  "change_percent": 4.31,
+  "sentiment": "very_negative",
+  "processing_timestamp": "2025-03-11T19:06:39.087187",
+  "value": 825171.76
+}

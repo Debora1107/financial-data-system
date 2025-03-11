@@ -1,0 +1,12 @@
+{
+  "symbol": "AMZN",
+  "price": 132.9,
+  "volume": 6985,
+  "timestamp": "2025-03-11T19:06:21.041155",
+  "market_cap": 8146300496,
+  "shares_outstanding": 44264042,
+  "change_percent": -0.69,
+  "sentiment": "neutral",
+  "processing_timestamp": "2025-03-11T19:06:21.048058",
+  "value": 928306.5
+}
