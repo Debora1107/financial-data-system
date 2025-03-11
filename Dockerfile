@@ -1,14 +1,10 @@
-FROM python:3.9-slim
+FROM rabbitmq:3-management
 
-WORKDIR /app
+WORKDIR /var/lib/rabbitmq
 
-COPY requirements.txt .
+COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
 
-RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 5672 15672
 
-COPY . .
-
-ENV PYTHONUNBUFFERED=1
-
-EXPOSE 5000 5001 5002 5003 5004
-
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD rabbitmq-diagnostics -q ping || exit 1
