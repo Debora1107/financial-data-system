@@ -69,13 +69,6 @@ services:
       - key: PYTHON_VERSION
         value: 3.9.0
 
-databases:
-  - name: financial-data-db
-    databaseName: financial_data
-    user: financial_user
-    plan: free
-
-services:
   - type: web
     name: financial-data-rabbitmq
     env: docker
@@ -88,4 +81,10 @@ services:
     disk:
       name: data
       mountPath: /var/lib/rabbitmq
-      sizeGB: 1 
+      sizeGB: 1
+
+databases:
+  - name: financial-data-db
+    databaseName: financial_data
+    user: financial_user
+    plan: free 
